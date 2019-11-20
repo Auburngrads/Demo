@@ -1,0 +1,76 @@
+---
+title: "Untitled"
+author: "Jason Freels"
+date: "February 13, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<style>
+thing {
+  position: relative;
+  display: inline-block;
+  padding: 15px 70px;
+  border: 1px solid #B17461;
+  border-radius: 50px;
+  color: #FFF;
+  font-size: 30px;
+  font-family: arial;
+  background-color: #B17461;
+  background-image: linear-gradient(#FFF, #FFF);
+  background-repeat: no-repeat;
+  transition: background-size .15s, color .15s;
+}
+thing.center-right-left, thing.center-top-bottom, thing.center-corner {
+  background-position: 50% 50%;
+}
+thing.to-left {
+  background-position: 100% 50%;
+}
+thing.to-right {
+  background-position: 0% 50%;
+}
+thing.to-top {
+  background-position: 50% 100%;
+}
+thing.to-bottom {
+  background-position: 50% 0%;
+}
+thing.center-right-left, .to-left, .to-right {
+  background-size: 0% 100%;
+}
+thing.center-top-bottom, .to-top, .to-bottom {
+  background-size: 100% 0%;
+}
+thing.center-corner {
+  background-size: 0% 0%;
+}
+thing:hover {
+  background-size: 100% 100%;
+  color: #B17461;
+}
+</style>
+# Stuff
+
+<h4>From center towards left and right</h4>
+<thing class='center-right-left'>NEXT</thing>
+
+<h4>From center towards top and bottom</h4>
+<thing class='center-top-bottom'>NEXT</thing>
+
+<h4>From center towards corners</h4>
+<thing class='center-corner'>NEXT</thing>
+
+<h4>From right to left</h4>
+<thing class='to-left'>NEXT</thing>
+
+<h4>From left to right</h4>
+<thing class='to-right'>NEXT</thing>
+
+<h4>From bottom to top</h4>
+<thing class='to-top'>NEXT</thing>
+
+<h4>From top to bottom</h4>
+<thing class='to-bottom'>NEXT</thing>
